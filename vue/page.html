@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Vue Component | Framework7 v2 Vue Documentation</title>
+    <meta property="og:image" content="http://framework7.io/i/f7-banner.jpg">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@framework7io">
+    <meta name="twitter:creator" content="@framework7io">
+    <meta name="twitter:title" content="Page Vue Component | Framework7 v2 Vue Documentation">
+    <meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/31954178?s=200&amp;v=4">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/i/favicon.png">
+    <script src="/js/modernizr-2.7.1.min.js"></script>
+  </head>
+  <body class="body-docs">
+    <header class="internal-header">
+      <div class="center">
+        <div class="logo-holder"><a class="logo" href="/"></a></div>
+        <div class="header-content">
+          <div class="title">Framework7 v2</div>
+          <ul class="nav">
+            <li><a href="/docs/">Docs</a>
+              <ul>
+                <li><a href="/docs/introduction.html">Getting Started</a></li>
+                <li><a href="/docs/">Framework7 / API</a></li>
+                <li><a href="/vue/">Framework7 Vue</a></li>
+                <li><a href="/docs/dom7.html">Dom7</a></li>
+                <li><a href="http://idangero.us/template7/" target="_blank">Template7</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Resources</a>
+              <ul>
+                <li><a href="http://forum.framework7.io" target="_blank">Community Forum</a></li>
+                <li><a href="http://framework7.io/tutorials/" target="_blank">Tutorials</a></li>
+                <li><a href="http://framework7.io/templates/" target="_blank">Templates</a></li>
+                <li><a href="http://framework7.io/plugins/" target="_blank">Plugins</a></li>
+                <li><a href="http://framework7.io/showcase/" target="_blank">Apps Showcase</a></li>
+                <li><a href="http://framework7.io/icons/" target="_blank">Framework7 Icons</a></li>
+              </ul>
+            </li>
+            <li><a href="http://blog.framework7.io" target="_blank">Blog</a></li>
+            <li><a href="http://framework7.io//contribute/" target="_blank">Contribute</a></li>
+          </ul>
+          <div class="patreon-github"><a class="patreon-button" href="https://www.patreon.com/vladimirkharlampidi" target="_blank"><span class="patreon-logo"></span><span class="patreon-text">Support Framework7</span></a>
+            <div class="github-buttons"><a href="https://github.com/nolimits4web/framework7/" target="_blank"><img src="/i/gh-logo.png"></a><a class="gh-stars" href="https://github.com/nolimits4web/framework7/" target="_blank"><span></span> stars</a><a class="gh-forks" href="https://github.com/nolimits4web/framework7/" target="_blank"><span></span> forks</a></div>
+          </div>
+        </div>
+        <div class="carbon"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=framework7io" id="_carbonads_js"></script></div>
+      </div>
+    </header>
+    <div class="bsa-cpc"></div>
+    <main>
+      <div class="center">
+        <div class="docs-nav">
+          <div class="docs-nav-toggle"><span></span><span></span><span></span></div>
+          <ul>
+            <li>
+              <div class="title">Get Started</div>
+              <ul>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="installation.html">Installation</a></li>
+                <li><a href="app-layout.html">App Layout</a></li>
+                <li><a href="init-app.html">Initialize App</a></li>
+                <li><a href="vue-component-extensions.html">Vue Component Extensions</a></li>
+                <li><a href="navigation-router.html">Navigation / Router</a></li>
+                <li><a href="colors.html">Color Properties</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Vue Components</div>
+              <ul>
+                <li><a href="accordion.html">Accordion</a></li>
+                <li><a href="action-sheet.html">Action Sheet / Actions</a></li>
+                <li><a href="badge.html">Badge</a></li>
+                <li><a href="block.html">Block / Content Block</a></li>
+                <li><a href="button.html">Button</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="checkbox.html">Checkbox</a></li>
+                <li><a href="chips.html">Chips / Tags</a></li>
+                <li><a href="contacts-list.html">Contacts List</a></li>
+                <li><a href="floating-action-button.html">Floating Action Button</a></li>
+                <li><a href="grid.html">Grid / Layout Grid</a></li>
+                <li><a href="icon.html">Icon</a></li>
+                <li><a href="inputs.html">Inputs / Form Inputs</a></li>
+                <li><a href="link.html">Link</a></li>
+                <li><a href="list-view.html">List View</a></li>
+                <li><a href="list-item.html">List Item</a></li>
+                <li><a href="list-button.html">List Button</a></li>
+                <li><a href="list-index.html">List Index</a></li>
+                <li><a href="login-screen.html">Login Screen</a></li>
+                <li><a href="messagebar.html">Messagebar</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="navbar.html">Navbar</a></li>
+                <li><a href="page.html">Page</a></li>
+                <li><a href="panel.html">Panel / Side Panels</a></li>
+                <li><a href="photo-browser.html">Photo Browser</a></li>
+                <li><a href="popover.html">Popover</a></li>
+                <li><a href="popup.html">Popup</a></li>
+                <li><a href="preloader.html">Preloader</a></li>
+                <li><a href="progressbar.html">Progressbar</a></li>
+                <li><a href="radio.html">Radio</a></li>
+                <li><a href="range-slider.html">Range Slider</a></li>
+                <li><a href="searchbar.html">Searchbar</a></li>
+                <li><a href="sheet-modal.html">Sheet Modal</a></li>
+                <li><a href="smart-select.html">Smart Select</a></li>
+                <li><a href="sortable.html">Sortable</a></li>
+                <li><a href="statusbar.html">Statusbar</a></li>
+                <li><a href="stepper.html">Stepper</a></li>
+                <li><a href="subnavbar.html">Subnavbar</a></li>
+                <li><a href="swiper.html">Swiper</a></li>
+                <li><a href="swipeout.html">Swipeout</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="toggle.html">Toggle</a></li>
+                <li><a href="toolbar-tabbar.html">Toolbar / Tabbar</a></li>
+                <li><a href="view.html">View</a></li>
+                <li><a href="virtual-list.html">Virtual List</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="docs-content">
+          <div class="improve-docs-link"><a href="https://github.com/framework7io/framework7-website/edit/master/src/pug/vue/page.pug" target="_blank">Improve this Doc</a></div>
+          <h1>Page Vue Component</h1>
+          <div class="docs-index"></div>
+          <p>Page in Framework7 has the same meaning as when you think about web pages. Page is the main component to display and operate content.</p>
+          <p>Page Vue component represents Framework7's <a href="../docs/page.html">Page</a>.</p>
+          <h2>Page Components</h2>
+          <p>There are following components included:</p>
+          <ul>
+            <li><code><b>f7-page</b></code> - main page element</li>
+            <li><code><b>f7-page-content</b></code> - additional inner page content element</li>
+          </ul>
+          <h2>Page Properties</h2>
+          <table class="params-table">
+            <thead>
+              <tr>
+                <th>Prop</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th colspan="4">&lt;f7-page&gt; properties</th>
+              </tr>
+              <tr>
+                <td>name</td>
+                <td>string</td>
+                <td></td>
+                <td>Page name</td>
+              </tr>
+              <tr>
+                <td>stacked</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enable for not currently active page if you use <code>stackedPages</code> Router parameter that keeps all pages in DOM</td>
+              </tr>
+              <tr>
+                <td>messages-content</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enable if you use <a href="messages.html">Messages</a> component inside to add required extra styling</td>
+              </tr>
+              <tr>
+                <td>page-content</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>When enabled it automatically adds <code>page-content</code> element inside. Usefule to disable when you need to use few page-content elements for tabs</td>
+              </tr>
+              <tr>
+                <td>tabs</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enable if you use Page as <a href="tabs.html">Tabs</a> wrapper</td>
+              </tr>
+              <tr>
+                <td>login-screen</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enable if you use <a href="login-screen.html">Login Screen</a> inside of the page to add required extra styling</td>
+              </tr>
+              <tr>
+                <td>no-swipeback</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Disables swipeback feature for the current page (affects iOS theme only)</td>
+              </tr>
+              <tr>
+                <td>with-subnavbar</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enable if you have Sub Navbar inside of the page</td>
+              </tr>
+              <tr>
+                <td>no-navbar</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enable if you use common Navbar layout and need to hide common Navbar (or use another one) for this page (affects iOS theme only)</td>
+              </tr>
+              <tr>
+                <td>no-toolbar</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enable if you use common Toolbar/Tabbar layout and need to hide Toolbar (or use another one) for this page</td>
+              </tr>
+              <tr>
+                <td>hide-bars-on-scroll</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Hide Navbar & Toolbar on page scroll</td>
+              </tr>
+              <tr>
+                <td>hide-navbar-on-scroll</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Hide Navbar on page scroll</td>
+              </tr>
+              <tr>
+                <td>hide-toolbar-on-scroll</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Hide Toolbar on page scroll</td>
+              </tr>
+              <tr>
+                <td>ptr</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enables <a href="../docs/pull-to-refresh.html">Pull To Refresh</a></td>
+              </tr>
+              <tr>
+                <td>ptr-distance</td>
+                <td>number</td>
+                <td></td>
+                <td>Custom pull to refresh trigger distance. By default (if not specified) it is 44px.</td>
+              </tr>
+              <tr>
+                <td>ptr-preloader</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Disable if you want to use custom pull to refresh preloader element</td>
+              </tr>
+              <tr>
+                <td>infinite</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enables <a href="../docs/infinite-scroll.html">Infinite Scroll</a></td>
+              </tr>
+              <tr>
+                <td>infinite-top</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enables infinite scroll on top of the page</td>
+              </tr>
+              <tr>
+                <td>infinite-distance</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Distance from the bottom of page (in px) to trigger infinite scroll event. By default (if not specified), it is 50 (px)</td>
+              </tr>
+              <tr>
+                <td>infinite-preloader</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Disable if you want to use custom infinite-scroll preloader</td>
+              </tr>
+              <tr>
+                <th colspan="4">&lt;f7-page-content&gt; properties</th>
+              </tr>
+              <tr>
+                <td>tab</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enable if you use page-content as Tab</td>
+              </tr>
+              <tr>
+                <td>tab-active</td>
+                <td>boolean</td>
+                <td></td>
+                <td>Enable if the current tab is active</td>
+              </tr>
+              <tr>
+                <td>
+                  ptr<br> ptr-distance
+<br> ptr-preloader
+<br> infinite
+<br> infinite-top
+<br> infinite-distance
+<br> infinite-preloader
+<br> hide-bars-on-scroll
+<br> hide-navbar-on-scroll
+<br> hide-toolbar-on-scroll
+<br> messages-content
+<br> login-screen
+                </td>
+                <td></td>
+                <td></td>
+                <td>Same as <code>&lt;f7-page&gt;</code> properties</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Page Events</h2>
+          <table class="events-table">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th colspan="2">&lt;f7-page&gt; events</th>
+              </tr>
+              <tr>
+                <td>page:mounted</td>
+                <td>Event will be triggered when new page just inserted to DOM</td>
+              </tr>
+              <tr>
+                <td>page:init</td>
+                <td>Event will be triggered after Framework7 initialize required page's components and navbar</td>
+              </tr>
+              <tr>
+                <td>page:reinit</td>
+                <td>This event will be triggered in case of navigating to the page that was already initialized.</td>
+              </tr>
+              <tr>
+                <td>page:beforein</td>
+                <td>Event will be triggered when everything initialized and page is ready to be transitioned into view (into active/current position)</td>
+              </tr>
+              <tr>
+                <td>page:afterin</td>
+                <td>Event will be triggered after page transitioned into view</td>
+              </tr>
+              <tr>
+                <td>page:beforeout</td>
+                <td>Event will be triggered right before page is going to be transitioned out of view</td>
+              </tr>
+              <tr>
+                <td>page:afterout</td>
+                <td>Event will be triggered after page transitioned out of view</td>
+              </tr>
+              <tr>
+                <td>page:beforeremove</td>
+                <td>Event will be triggered right before Page will be removed from DOM. This event could be very useful if you need to detach some events / destroy some plugins to free memory</td>
+              </tr>
+              <tr>
+                <td>ptr:pullstart</td>
+                <td>Event will be triggered when you start to move pull to refresh content</td>
+              </tr>
+              <tr>
+                <td>ptr:pullmove</td>
+                <td>Event will be triggered during you move pull to refresh content</td>
+              </tr>
+              <tr>
+                <td>ptr:pullend</td>
+                <td>Event will be triggered when you release pull to refresh content</td>
+              </tr>
+              <tr>
+                <td>ptr:refresh</td>
+                <td>Event will be triggered when pull to refresh enters in "refreshing" state</td>
+              </tr>
+              <tr>
+                <td>ptr:done</td>
+                <td>Event will be triggered after pull to refresh is done and it is back to initial state (after calling <b>pullToRefreshDone</b> method)</td>
+              </tr>
+              <tr>
+                <td>infinite</td>
+                <td>Event will be triggered when page scroll reaches specified (in data-distance attribute) distance to the bottom.</td>
+              </tr>
+              <tr>
+                <th colspan="2">&lt;f7-page-content&gt; events</th>
+              </tr>
+              <tr>
+                <td>tab:show</td>
+                <td>Event will be triggered when Tab becomes visible/active</td>
+              </tr>
+              <tr>
+                <td>tab:hide</td>
+                <td>Event will be triggered when Tab becomes hidden/inactive</td>
+              </tr>
+              <tr>
+                <td>
+                  ptr:pullstart<br> ptr:pullmove
+                  <br> ptr:pullend
+                  <br> ptr:refresh
+                  <br> ptr:done
+                  <br> infinite
+                </td>
+                <td>Same as <code>&lt;f7-page&gt;</code> events</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Page Slots</h2>
+          <p>Page Vue component (<code>&lt;f7-page&gt;</code>) has additional slots for custom elements:</p>
+          <ul>
+            <li><code><b>default</b></code> - element will be inserted as a child of  "page-content", if <code>page-content</code> prop is enabled (by default)</li>
+            <li><code><b>fixed</b></code> - element will be inserted as a direct child of "page" right before "page-content"</li>
+          </ul>
+          <pre><code class="html">&lt;f7-page&gt;
+  &lt;div slot="fixed"&gt;Fixed element&lt;/div&gt;
+  &lt;p&gt;Page content goes here&lt;/p&gt;
+&lt;/f7-page&gt;
+
+&lt;!-- Renders to: --&gt;
+
+&lt;div class="page"&gt;
+  &lt;div&gt;Fixed element&lt;/div&gt;
+  &lt;div class="page-content"&gt;
+    &lt;p&gt;Page content goes here&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <h2>Examples</h2>
+          <h4>Minimal layout</h4>
+          <pre><code class="html">&lt;f7-page name="home"&gt;
+  &lt;p&gt;Page content&lt;/p&gt;
+&lt;/f7-page&gt;
+
+&lt;!-- Renders to: --&gt;
+
+&lt;div class="page" data-name="home"&gt;
+  &lt;div class="page-content"&gt;
+    &lt;p&gt;Page content&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <h4>With Navbar</h4>
+          <pre><code class="html">&lt;f7-page name="home"&gt;
+  &lt;f7-navbar title="My App"&gt;&lt;/f7-navbar&gt;
+  &lt;p&gt;Page content&lt;/p&gt;
+&lt;/f7-page&gt;
+
+&lt;!-- Renders to: --&gt;
+
+&lt;div class="page" data-name="home"&gt;
+  &lt;div class="navbar"&gt;
+    &lt;div class="navbar-inner sliding"&gt;
+      &lt;div class="title"&gt;My App&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="page-content"&gt;
+    &lt;p&gt;Page content&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <h4>Pull To Refresh</h4>
+          <pre><code class="html">&lt;f7-page ptr @ptr:refresh="onRefresh"&gt;
+  &lt;f7-navbar title="My App"&gt;&lt;/f7-navbar&gt;
+  &lt;p&gt;Page content&lt;/p&gt;
+&lt;/f7-page&gt;
+
+&lt;!-- Renders to: --&gt;
+
+&lt;div class="page"&gt;
+  &lt;div class="navbar"&gt;
+    &lt;div class="navbar-inner sliding"&gt;
+      &lt;div class="title"&gt;My App&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="page-content ptr-content"&gt;
+    &lt;div class="ptr-preloader"&gt;
+      &lt;div class="preloader"&gt;&lt;/div&gt;
+      &lt;div class="ptr-arrow"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Page content&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <h4>Infinite Scroll</h4>
+          <pre><code class="html">&lt;f7-page infinite @infinite="onInfiniteScroll"&gt;
+  &lt;f7-navbar title="My App"&gt;&lt;/f7-navbar&gt;
+  &lt;p&gt;Page content&lt;/p&gt;
+&lt;/f7-page&gt;
+
+&lt;!-- Renders to: --&gt;
+
+&lt;div class="page"&gt;
+  &lt;div class="navbar"&gt;
+    &lt;div class="navbar-inner sliding"&gt;
+      &lt;div class="title"&gt;My App&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="page-content infinite-scroll-content"&gt;
+    &lt;p&gt;Page content&lt;/p&gt;
+    &lt;div class="preloader infinite-scroll-preloader"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          <h4>Page Content as Tabs</h4>
+          <pre><code class="html">&lt;f7-page tabs :page-content="false"&gt;
+  &lt;f7-navbar title="My App"&gt;&lt;/f7-navbar&gt;
+  &lt;f7-page-content tab tab-active id="tab-1"&gt;Tab 1 Content ...&lt;/f7-page-content&gt;
+  &lt;f7-page-content tab id="tab-2"&gt;Tab 2 Content ...&lt;/f7-page-content&gt;
+  &lt;f7-page-content tab id="tab-3"&gt;Tab 3 Content ...&lt;/f7-page-content&gt;
+&lt;/f7-page&gt;
+
+&lt;!-- Renders to: --&gt;
+
+&lt;div class="page"&gt;
+  &lt;div class="navbar"&gt;
+    &lt;div class="navbar-inner sliding"&gt;
+      &lt;div class="title"&gt;My App&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id="tab-1" class="page-content tab tab-active"&gt;
+    Tab 1 Content ...
+  &lt;/div&gt;
+  &lt;div id="tab-2" class="page-content tab"&gt;
+    Tab 2 Content ...
+  &lt;/div&gt;
+  &lt;div id="tab-3" class="page-content tab"&gt;
+    Tab 3 Content ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
+    <script src="/js/jquery-1.11.0.min.js"></script>
+    <script src="/js/highlight.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-74282934-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      (function(){
+        var bsa = document.createElement('script');
+           bsa.type = 'text/javascript';
+           bsa.async = true;
+           bsa.src = '//s3.buysellads.com/ac/bsa.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+      })();
+    </script>
+    <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+    <script>
+      (function(){
+        if(typeof _bsa !== 'undefined' && _bsa) {
+        _bsa.init('default', 'CKYD627I', 'placement:framework7io', {
+          target: '.bsa-cpc',
+          align: 'horizontal',
+          disable_css: 'true'
+        });
+          }
+      })();
+    </script>
+  </body>
+</html>

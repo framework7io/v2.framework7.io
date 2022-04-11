@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calendar / Datepicker | Framework7 v2 Documentation</title>
+    <meta property="og:image" content="http://framework7.io/i/f7-banner.jpg">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@framework7io">
+    <meta name="twitter:creator" content="@framework7io">
+    <meta name="twitter:title" content="Calendar / Datepicker | Framework7 v2 Documentation">
+    <meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/31954178?s=200&amp;v=4">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/i/favicon.png">
+    <script src="/js/modernizr-2.7.1.min.js"></script>
+  </head>
+  <body class="body-docs">
+    <header class="internal-header">
+      <div class="center">
+        <div class="logo-holder"><a class="logo" href="/"></a></div>
+        <div class="header-content">
+          <div class="title">Framework7 v2</div>
+          <ul class="nav">
+            <li><a href="/docs/">Docs</a>
+              <ul>
+                <li><a href="/docs/introduction.html">Getting Started</a></li>
+                <li><a href="/docs/">Framework7 / API</a></li>
+                <li><a href="/vue/">Framework7 Vue</a></li>
+                <li><a href="/docs/dom7.html">Dom7</a></li>
+                <li><a href="http://idangero.us/template7/" target="_blank">Template7</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Resources</a>
+              <ul>
+                <li><a href="http://forum.framework7.io" target="_blank">Community Forum</a></li>
+                <li><a href="http://framework7.io/tutorials/" target="_blank">Tutorials</a></li>
+                <li><a href="http://framework7.io/templates/" target="_blank">Templates</a></li>
+                <li><a href="http://framework7.io/plugins/" target="_blank">Plugins</a></li>
+                <li><a href="http://framework7.io/showcase/" target="_blank">Apps Showcase</a></li>
+                <li><a href="http://framework7.io/icons/" target="_blank">Framework7 Icons</a></li>
+              </ul>
+            </li>
+            <li><a href="http://blog.framework7.io" target="_blank">Blog</a></li>
+            <li><a href="http://framework7.io//contribute/" target="_blank">Contribute</a></li>
+          </ul>
+          <div class="patreon-github"><a class="patreon-button" href="https://www.patreon.com/vladimirkharlampidi" target="_blank"><span class="patreon-logo"></span><span class="patreon-text">Support Framework7</span></a>
+            <div class="github-buttons"><a href="https://github.com/nolimits4web/framework7/" target="_blank"><img src="/i/gh-logo.png"></a><a class="gh-stars" href="https://github.com/nolimits4web/framework7/" target="_blank"><span></span> stars</a><a class="gh-forks" href="https://github.com/nolimits4web/framework7/" target="_blank"><span></span> forks</a></div>
+          </div>
+        </div>
+        <div class="carbon"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=framework7io" id="_carbonads_js"></script></div>
+      </div>
+    </header>
+    <div class="bsa-cpc"></div>
+    <main>
+      <div class="center">
+        <div class="docs-demo-device docs-demo-device-ios">
+          <div class="docs-demo-device-buttons"><a class="active" data-theme="ios">iOS</a><a data-theme="md">Android</a></div>
+          <div class="docs-demo-device-iframe">
+            <iframe width="320" height="548" frameborder="0" scrolling="on"></iframe>
+            <div class="fade-overlay"></div>
+          </div>
+          <div class="docs-demo-device-android-buttons">
+            <div class="triangle"></div>
+            <div class="circle"></div>
+            <div class="square"></div>
+          </div>
+        </div>
+        <div class="docs-nav">
+          <div class="docs-nav-toggle"><span></span><span></span><span></span></div>
+          <ul>
+            <li>
+              <div class="title">Get Started</div>
+              <ul>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="installation.html">Installation</a></li>
+                <li><a href="app-layout.html">App HTML Layout</a></li>
+                <li><a href="rtl-layout.html">RTL Layout</a></li>
+                <li><a href="init-app.html">Initialize App</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Events</div>
+              <ul>
+                <li><a href="events.html">Events</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Router / Navigation</div>
+              <ul>
+                <li><a href="routes.html">Routes</a></li>
+                <li><a href="router-component.html">Router Component</a></li>
+                <li><a href="view.html#router-api-methods-properties">Router API</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Components</div>
+              <ul>
+                <li><a href="app.html">App / Core</a></li>
+                <li><a href="accordion.html">Accordion / Collapsible</a></li>
+                <li><a href="action-sheet.html">Action Sheet / Actions</a></li>
+                <li><a href="autocomplete.html">Autocomplete</a></li>
+                <li><a href="badge.html">Badge</a></li>
+                <li><a href="block.html">Block / Content Block</a></li>
+                <li><a href="button.html">Button</a></li>
+                <li><a href="calendar.html">Calendar / Datepicker</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="checkbox.html">Checkbox</a></li>
+                <li><a href="chips.html">Chips / Tags</a></li>
+                <li><a href="contacts-list.html">Contacts List</a></li>
+                <li><a href="data-table.html">Data Table</a></li>
+                <li><a href="dialog.html">Dialog</a></li>
+                <li><a href="floating-action-button.html">Floating Action Button</a></li>
+                <li><a href="form.html">Form Data / Storage</a></li>
+                <li><a href="grid.html">Grid / Layout Grid</a></li>
+                <li><a href="icons.html">Icons</a></li>
+                <li><a href="infinite-scroll.html">Infinite Scroll</a></li>
+                <li><a href="inputs.html">Inputs / Form Inputs</a></li>
+                <li><a href="lazy-load.html">Lazy Load</a></li>
+                <li><a href="link.html">Link</a></li>
+                <li><a href="list-view.html">List View</a></li>
+                <li><a href="list-index.html">List Index</a></li>
+                <li><a href="login-screen.html">Login Screen</a></li>
+                <li><a href="messagebar.html">Messagebar</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="navbar.html">Navbar</a></li>
+                <li><a href="notification.html">Notification</a></li>
+                <li><a href="page.html">Page</a></li>
+                <li><a href="panel.html">Panel / Side Panels</a></li>
+                <li><a href="photo-browser.html">Photo Browser</a></li>
+                <li><a href="picker.html">Picker</a></li>
+                <li><a href="popover.html">Popover</a></li>
+                <li><a href="popup.html">Popup</a></li>
+                <li><a href="preloader.html">Preloader</a></li>
+                <li><a href="progressbar.html">Progressbar</a></li>
+                <li><a href="pull-to-refresh.html">Pull to Refresh</a></li>
+                <li><a href="radio.html">Radio</a></li>
+                <li><a href="range-slider.html">Range Slider</a></li>
+                <li><a href="searchbar.html">Searchbar</a></li>
+                <li><a href="sheet-modal.html">Sheet Modal</a></li>
+                <li><a href="smart-select.html">Smart Select</a></li>
+                <li><a href="sortable-list.html">Sortable List</a></li>
+                <li><a href="statusbar.html">Statusbar</a></li>
+                <li><a href="stepper.html">Stepper</a></li>
+                <li><a href="subnavbar.html">Subnavbar</a></li>
+                <li><a href="swiper.html">Swiper</a></li>
+                <li><a href="swipeout.html">Swipeout</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="toast.html">Toast</a></li>
+                <li><a href="toggle.html">Toggle</a></li>
+                <li><a href="toolbar-tabbar.html">Toolbar / Tabbar</a></li>
+                <li><a href="vi.html">Video Intelligence (vi)</a></li>
+                <li><a href="view.html">View / Router</a></li>
+                <li><a href="virtual-list.html">Virtual List</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Framework7 Icons</div>
+              <ul>
+                <li><a href="http://framework7.io/icons/">Framework7 Icons Cheatsheet</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Styling</div>
+              <ul>
+                <li><a href="iphone-x.html">iPhone X</a></li>
+                <li><a href="color-themes.html">Color Themes</a></li>
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="hairlines.html">Hairlines</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Dom7</div>
+              <ul>
+                <li><a href="dom7.html">Dom7</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Template7</div>
+              <ul>
+                <li><a href="template7.html">Template7</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Fast Clicks</div>
+              <ul>
+                <li><a href="fast-clicks.html">Fast Clicks</a></li>
+                <li><a href="active-state.html">Active State</a></li>
+                <li><a href="tap-hold.html">Tap Hold Event (Long Tap)</a></li>
+                <li><a href="touch-ripple.html">Touch Ripple (MD Theme)</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Utilities</div>
+              <ul>
+                <li><a href="request.html">Request / Ajax</a></li>
+                <li><a href="utils.html">Utils</a></li>
+                <li><a href="device.html">Device</a></li>
+                <li><a href="support.html">Support</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Plugins API</div>
+              <ul>
+                <li><a href="plugins-api.html">Plugins API</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="title">Custom Build</div>
+              <ul>
+                <li><a href="custom-build.html">Custom Build</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="docs-content">
+          <div class="improve-docs-link"><a href="https://github.com/framework7io/framework7-website/edit/master/src/pug/docs/calendar.pug" target="_blank">Improve this Doc</a></div>
+          <h1>Calendar / Datepicker</h1>
+          <div class="docs-index"></div>
+          <p>Calendar is a touch optimized component that provides an easy way to handle dates.</p>
+          <p>Calendar could be used as inline component or as overlay. Overlay Calendar will be automatically converted to Popover on tablets (iPad).</p>
+          <h2>Calendar App Methods</h2>
+          <p>Let's look at related App methods to work with Calendar:</p>
+          <div class="method-wrap">
+            <p><span class="method">app.calendar.create(<span>parameters</span>)</span>- create Calendar instance</p>
+            <ul class="method-parameters">
+              <li><span class="parameter">parameters</span> - <span class="parameter-type">object</span>. Object with calendar parameters</li>
+            </ul>
+            <p class="method-returns">Method returns created Calendar's instance</p>
+          </div>
+          <div class="method-wrap">
+            <p><span class="method">app.calendar.destroy(<span>el</span>)</span>- destroy Calendar instance</p>
+            <ul class="method-parameters">
+              <li><span class="parameter">el</span> - <span class="parameter-type">HTMLElement</span> or <span class="parameter-type">string</span> (with CSS Selector) or <span class="parameter-type">object</span>. Calendar element or Calendar instance to destroy.</li>
+            </ul>
+          </div>
+          <div class="method-wrap">
+            <p><span class="method">app.calendar.get(<span>el</span>)</span>- get Calendar instance by HTML element</p>
+            <ul class="method-parameters">
+              <li><span class="parameter">el</span> - <span class="parameter-type">HTMLElement</span> or <span class="parameter-type">string</span> (with CSS Selector). Calendar element.</li>
+            </ul>
+            <p class="method-returns">Method returns Calendar's instance</p>
+          </div>
+          <div class="method-wrap">
+            <p><span class="method">app.calendar.close(<span>el</span>)</span>- close Calendar</p>
+            <ul class="method-parameters">
+              <li><span class="parameter">el</span> - <span class="parameter-type">HTMLElement</span> or <span class="parameter-type">string</span> (with CSS Selector). Calendar element to close.</li>
+            </ul>
+            <p class="method-returns">Method returns Calendar's instance</p>
+          </div>
+          <p>For example:</p>
+          <pre><code class="js">var calendar = app.calendar.create({
+    input: '#calendar-input'
+});</code></pre>
+          <h2>Calendar Parameters</h2>
+          <p>Let's look on list of all available Calendar parameters:</p>
+          <table class="params-table">
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>value</td>
+                <td>array</td>
+                <td></td>
+                <td>Array with initial selected dates. Each array item represents selected date</td>
+              </tr>
+              <tr>
+                <td>disabled</td>
+                <td>Date Range</td>
+                <td></td>
+                <td>Additonal disabled dates. Parameter accepts so called <b>Date Range</b> (look below for details)</td>
+              </tr>
+              <tr>
+                <td>events</td>
+                <td>Date Range</td>
+                <td></td>
+                <td>Dates with events. Will be marked with additonal "dot" on calendar day. Parameter accepts so called <b>Date Ranges</b> (look below for details)</td>
+              </tr>
+              <tr>
+                <td>rangesClasses</td>
+                <td>array</td>
+                <td></td>
+                <td>Date ranges you want to add custom CSS class for additional styling. Look below for accepted format</td>
+              </tr>
+              <tr>
+                <td>formatValue</td>
+                <td>function (values)</td>
+                <td></td>
+                <td>Function to format input value, should return new/formatted string value. <b>values</b> is array where each item represents selected date</td>
+              </tr>
+              <tr>
+                <td>monthNames</td>
+                <td>array</td>
+                <td>['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August' , 'September' , 'October', 'November', 'December']</td>
+                <td>Array with full month names</td>
+              </tr>
+              <tr>
+                <td>monthNamesShort</td>
+                <td>array</td>
+                <td>['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']</td>
+                <td>Array with short month names</td>
+              </tr>
+              <tr>
+                <td>dayNames</td>
+                <td>array</td>
+                <td>['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']</td>
+                <td>Array with week day names</td>
+              </tr>
+              <tr>
+                <td>dayNamesShort</td>
+                <td>array</td>
+                <td>['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']</td>
+                <td>Array with week day short names</td>
+              </tr>
+              <tr>
+                <td>firstDay</td>
+                <td>number</td>
+                <td>1</td>
+                <td>First day of the week. By default 1 - Monday</td>
+              </tr>
+              <tr>
+                <td>weekendDays</td>
+                <td>array</td>
+                <td>[0, 6]</td>
+                <td>Array with index numeber of weekend days, by default it is Saturday and Sunday</td>
+              </tr>
+              <tr>
+                <td>dateFormat</td>
+                <td>string</td>
+                <td>'yyyy-mm-dd'</td>
+                <td>Default date format, available expressions:
+                  <ul>
+                    <li>'yyyy' - 4 digits year</li>
+                    <li>'yy' - 2 digits year</li>
+                    <li>'mm' - 2 digits month number, from 01 to 12</li>
+                    <li>'m' - month number, from 1 to 12</li>
+                    <li>'MM' - full month name</li>
+                    <li>'M' - short month name</li>
+                    <li>'dd' - 2 digits day number, from 01 to 31</li>
+                    <li>'d' - day number, from 1 to 31</li>
+                    <li>'DD' - full week day name</li>
+                    <li>'D' - short week day name</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>multiple</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Enable to allows select multiple dates/values</td>
+              </tr>
+              <tr>
+                <td>rangePicker</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Enable to enable range picker. Not compatible with <code>multiple</code></td>
+              </tr>
+              <tr>
+                <td>direction</td>
+                <td>string</td>
+                <td>'horizontal'</td>
+                <td>Months layout direction, could be 'horizontal' or 'vertical'</td>
+              </tr>
+              <tr>
+                <td>minDate</td>
+                <td>Date</td>
+                <td>null</td>
+                <td>Minimum allowed date</td>
+              </tr>
+              <tr>
+                <td>maxDate</td>
+                <td>Date</td>
+                <td>null</td>
+                <td>Maximum allowed date</td>
+              </tr>
+              <tr>
+                <td>touchMove</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>If enabled then calendar months slides follow finger during touch move</td>
+              </tr>
+              <tr>
+                <td>animate</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Enables transition between months</td>
+              </tr>
+              <tr>
+                <td>closeOnSelect</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Enable and calendar will be closed when user pick a date</td>
+              </tr>
+              <tr>
+                <td>weekHeader</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Enable week header with short name week days</td>
+              </tr>
+              <tr>
+                <td>monthSelector</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Enable month selector in toolbar</td>
+              </tr>
+              <tr>
+                <td>yearSelector</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Enable year picker in toolbar</td>
+              </tr>
+              <tr>
+                <th colspan="4">Container/opener-specific parameters</th>
+              </tr>
+              <tr>
+                <td>containerEl</td>
+                <td>string<br>HTMLElement</td>
+                <td></td>
+                <td>String with CSS selector or HTMLElement where to place generated Calendar HTML. <b>Use only for inline calendar</b></td>
+              </tr>
+              <tr>
+                <td>openIn</td>
+                <td>string</td>
+                <td>auto</td>
+                <td>Can be <code>auto</code>, <code>popover</code> (to open calendar in popover), <code>sheet</code> (to open in sheet modal) or <code>customModal</code> (to open in custom Calendar modal overlay). In case of <code>auto</code> will open in sheet modal on small screens and in popover on large screens.</td>
+              </tr>
+              <tr>
+                <td>inputEl</td>
+                <td>string or HTMLElement</td>
+                <td></td>
+                <td>String with CSS selector or HTMLElement with related input element</td>
+              </tr>
+              <tr>
+                <td>scrollToInput</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Scroll viewport (page-content) to input when calendar opened</td>
+              </tr>
+              <tr>
+                <td>inputReadOnly</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Sets "readonly" attribute on specified input</td>
+              </tr>
+              <tr>
+                <td>cssClass</td>
+                <td>string</td>
+                <td></td>
+                <td>Additional CSS class name to be set on calendar element</td>
+              </tr>
+              <tr>
+                <td>closeByOutsideClick</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>If enabled, picker will be closed by clicking outside of picker or related input element</td>
+              </tr>
+              <tr>
+                <td>toolbar</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Enables calendar toolbar</td>
+              </tr>
+              <tr>
+                <td>toolbarCloseText</td>
+                <td>string</td>
+                <td>Done</td>
+                <td>Text for Done/Close toolbar button</td>
+              </tr>
+              <tr>
+                <td>header</td>
+                <td>boolean</td>
+                <td>false</td>
+                <td>Enables calendar header</td>
+              </tr>
+              <tr>
+                <td>headerPlaceholder</td>
+                <td>string</td>
+                <td>Select date</td>
+                <td>Default calendar header placeholder text</td>
+              </tr>
+              <tr>
+                <td>routableModals</td>
+                <td>boolean</td>
+                <td>true</td>
+                <td>Will add opened calendar to router history which gives ability to close calendar by going back in router history and set current route to the calendar modal</td>
+              </tr>
+              <tr>
+                <td>url</td>
+                <td>string</td>
+                <td>date/</td>
+                <td>Calendar modal URL that will be set as a current route</td>
+              </tr>
+              <tr>
+                <td>view</td>
+                <td>object</td>
+                <td></td>
+                <td>View where to set routing when <code>routableModals</code> enabled. Defaults to parent view of <code>inputEl</code> or main view if not found parent view</td>
+              </tr>
+              <tr>
+                <th colspan="4">Render Functions</th>
+              </tr>
+              <tr>
+                <td>renderWeekHeader</td>
+                <td>function</td>
+                <td></td>
+                <td>Function to render week header. Must return week header HTML string</td>
+              </tr>
+              <tr>
+                <td>renderMonths</td>
+                <td>function(date)</td>
+                <td></td>
+                <td>Function to render months wrapper. Must return months container full HTML string</td>
+              </tr>
+              <tr>
+                <td>renderMonth</td>
+                <td>function(date, offset)</td>
+                <td></td>
+                <td>Function to render single month. Must return single month HTML string</td>
+              </tr>
+              <tr>
+                <td>renderMonthSelector</td>
+                <td>function</td>
+                <td></td>
+                <td>Function to render month selector. Must return month selector HTML string</td>
+              </tr>
+              <tr>
+                <td>renderYearSelector</td>
+                <td>function</td>
+                <td></td>
+                <td>Function to render year selector. Must return year selector HTML string</td>
+              </tr>
+              <tr>
+                <td>renderHeader</td>
+                <td>function</td>
+                <td></td>
+                <td>Function to render calendar header. Must return calendar header HTML string</td>
+              </tr>
+              <tr>
+                <td>renderToolbar</td>
+                <td>function</td>
+                <td></td>
+                <td>Function to render toolbar. Must return toolbar HTML string</td>
+              </tr>
+              <tr>
+                <td>render</td>
+                <td>function</td>
+                <td></td>
+                <td>Function to render whole calendar. Must return calendar full HTML string</td>
+              </tr>
+              <tr>
+                <th colspan="4">Events</th>
+              </tr>
+              <tr>
+                <td>on</td>
+                <td>object</td>
+                <td></td>
+                <td>Object with events handlers. For example:
+                  <pre><code>var calendar = app.calendar.create({
+  ...
+  on: {
+    opened: function () {
+      console.log('Calendar opened')
+    }
+  }
+})</code></pre>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="important-note">
+            <p>Note that all following parameters can be used in global app parameters under <code>calendar</code> property to set defaults for all calendars. For example:</p>
+            <pre><code>var app = new Framework7({
+  calendar: {
+    url: 'calendar/',
+    dateFormat: 'dd.mm.yyyy',
+  }
+});</code></pre>
+          </div>
+          <h3>Date Range</h3>
+          <p>Some of Calendar parameters (<b>disabled</b>, <b>events</b> and <b>rangesClasses</b>) accept so called <b>Date Range</b>. It is a simple way to specify and cover all possible dates combination.</p>
+          <p>It can be array with dates, for example:</p>
+          <pre><code class="js">var calendar = app.calendar.create({
+    ...
+    //Disabled 10th November 2015 and 11th November 2015:
+    disabled: [new Date(2015, 10, 10), new Date(2015, 10, 11)],
+    ...
+});</code></pre>
+          <p>It can be custom function where you need to return <b>true</b> or <b>false</b></p>
+          <pre><code class="js">var calendar = app.calendar.create({
+    ...
+    //Disabled all dates in November 2015
+    disabled: function (date) {
+        if (date.getFullYear() === 2015 && date.getMonth() === 10) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    },
+    ...
+});</code></pre>
+          <p>Or object with <b>from</b> and <b>to</b> properties</p>
+          <pre><code class="js">var calendar = app.calendar.create({
+    ...
+    //Disable all dates between 1st October 2015 and 31 December 2015
+    disabled: {
+        from: new Date(2015, 9, 1),
+        to: new Date(2015, 11, 31)
+    },
+    ...
+});</code></pre>
+          <p>Or object with just <b>from</b> or <b>to</b> properties</p>
+          <pre><code class="js">var calendar = app.calendar.create({
+    ...
+    //Disable everyting since December 2015
+    disabled: {
+        from: new Date(2015, 11, 1)
+    },
+    ...
+});</code></pre>
+          <p>Or array with mixed dates and objects:</p>
+          <pre><code class="js">var calendar = app.calendar.create({
+    ...
+    events: [
+        new Date(2015, 9, 1),
+        new Date(2015, 9, 5),
+        {
+            from: new Date(2015, 9, 10),
+            to: new Date(2015, 9, 15)
+        },
+        {
+            from: new Date(2015, 9, 20),
+            to: new Date(2015, 9, 31)
+        }
+    ],
+    ...
+});</code></pre>
+          <h3>rangesClasses</h3>
+          <p><b>rangesClasses</b> parameter accepts array of objects with Date Range and class names for this range:</p>
+          <pre><code class="js">var calendar = app.calendar.create({
+    ...
+    //Add classes for november and october
+    rangesClasses: [
+        //Add "day-october' class for all october dates
+        {
+            // string CSS class name for this range in "cssClass" property
+            cssClass: 'day-october', //string CSS class
+            // Date Range in "range" property
+            range: function (date) {
+                return date.getMonth() === 9
+            }
+        },
+        //Add "day-holiday" class for 1-10th January 2015
+        {
+            cssClass: 'day-holiday',
+            range: {
+                from: new Date(2016, 0, 1),
+                to: new Date(2016, 0, 10)
+            }
+        }
+    ],
+    ...
+});</code></pre>
+          <h2>Calendar Methods & Properties</h2>
+          <p>After we initialize Calendar we have its initialized instance in variable (like <code>calendar</code> variable in examples above) with helpful methods and properties:</p>
+          <table class="methods-table">
+            <tbody>
+              <tr>
+                <th colspan="2">Properties</th>
+              </tr>
+              <tr>
+                <td>calendar.app</td>
+                <td>Link to global app instance</td>
+              </tr>
+              <tr>
+                <td>calendar.containerEl</td>
+                <td>Calendar wrapping container HTML element (when inline calendar is in use)</td>
+              </tr>
+              <tr>
+                <td>calendar.$containerEl</td>
+                <td>Dom7 instance with calendar wrapping container HTML element (when inline calendar is in use)</td>
+              </tr>
+              <tr>
+                <td>calendar.el</td>
+                <td>Calendar HTML element</td>
+              </tr>
+              <tr>
+                <td>calendar.$el</td>
+                <td>Dom7 instance with calendar HTML element</td>
+              </tr>
+              <tr>
+                <td>calendar.inputEl</td>
+                <td>Calendar input HTML element (passed in <code>inputEl</code> parameter)</td>
+              </tr>
+              <tr>
+                <td>calendar.$inputEl</td>
+                <td>Dom7 instance with calendar input HTML element (passed in <code>inputEl</code> parameter)</td>
+              </tr>
+              <tr>
+                <td>calendar.value</td>
+                <td>Array where each item represents selected date</td>
+              </tr>
+              <tr>
+                <td>calendar.opened</td>
+                <td><code>true</code> if Calendar is currently opened</td>
+              </tr>
+              <tr>
+                <td>calendar.inline</td>
+                <td><code>true</code> when inline calendar is in use</td>
+              </tr>
+              <tr>
+                <td>calendar.cols</td>
+                <td>Array with specified Calendar columns. Each column also has its own methods and properties (look below)</td>
+              </tr>
+              <tr>
+                <td>calendar.url</td>
+                <td>Calendar URL (that was passed in <code>url</code> parameter)</td>
+              </tr>
+              <tr>
+                <td>calendar.view</td>
+                <td>Calendar View (that was passed in <code>view</code> parameter) or found parent view</td>
+              </tr>
+              <tr>
+                <td>calendar.params</td>
+                <td>Object with initialization parameters</td>
+              </tr>
+              <tr>
+                <th colspan="2">Methods</th>
+              </tr>
+              <tr>
+                <td>calendar.setValue(values)</td>
+                <td>Set new selected dates. <code>values</code> is array where each item represents selected date</td>
+              </tr>
+              <tr>
+                <td>calendar.getValue()</td>
+                <td>Returns current calendar value</td>
+              </tr>
+              <tr>
+                <td>calendar.addValue()</td>
+                <td>Adds value to the values array. Useful in case if multiple selection is enabled (with <code>multiple: true</code> parameter)</td>
+              </tr>
+              <tr>
+                <td>calendar.update()</td>
+                <td>Rerenders calendar. Useful in case you added/changed values dynamically and need to update calendar layout</td>
+              </tr>
+              <tr>
+                <td>calendar.nextMonth(duration)</td>
+                <td>Calendar transition to next month for specified duration in ms</td>
+              </tr>
+              <tr>
+                <td>calendar.prevMonth(duration)</td>
+                <td>Calendar transition to previous month for specified duration in ms</td>
+              </tr>
+              <tr>
+                <td>calendar.nextYear()</td>
+                <td>Calendar transition to next year</td>
+              </tr>
+              <tr>
+                <td>calendar.prevYear()</td>
+                <td>Calendar transition to previous year</td>
+              </tr>
+              <tr>
+                <td>calendar.setYearMonth(year, month, duration)</td>
+                <td>Calendar transition to specified year, month for specified duration in ms</td>
+              </tr>
+              <tr>
+                <td>calendar.open()</td>
+                <td>Open Calendar</td>
+              </tr>
+              <tr>
+                <td>calendar.close()</td>
+                <td>Close Calendar</td>
+              </tr>
+              <tr>
+                <td>calendar.destroy()</td>
+                <td>Destroy Calendar instance and remove all events</td>
+              </tr>
+              <tr>
+                <td>calendar.on(<span>event</span>, <span>handler</span>)</td>
+                <td>Add event handler</td>
+              </tr>
+              <tr>
+                <td>calendar.once(<span>event</span>, <span>handler</span>)</td>
+                <td>Add event handler that will be removed after it was fired</td>
+              </tr>
+              <tr>
+                <td>calendar.off(<span>event</span>, <span>handler</span>)</td>
+                <td>Remove event handler</td>
+              </tr>
+              <tr>
+                <td>calendar.off(<span>event</span>)</td>
+                <td>Remove all handlers for specified event</td>
+              </tr>
+              <tr>
+                <td>calendar.emit(<span>event</span>, <span>...args</span>)</td>
+                <td>Fire event on instance</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Calendar Events</h2>
+          <p>Calendar will fire the following DOM events on calendar element and events on app and calendar instance:</p>
+          <h3>DOM Events</h3>
+          <table class="events-table">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Target</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>calendar:open</td>
+                <td>Calendar Element<span>&lt;div class="calendar"&gt;</span></td>
+                <td>Event will be triggered when Calendar starts its opening animation</td>
+              </tr>
+              <tr>
+                <td>calendar:opened</td>
+                <td>Calendar Element<span>&lt;div class="calendar"&gt;</span></td>
+                <td>Event will be triggered after Calendar completes its opening animation</td>
+              </tr>
+              <tr>
+                <td>calendar:close</td>
+                <td>Calendar Element<span>&lt;div class="calendar"&gt;</span></td>
+                <td>Event will be triggered when Calendar starts its closing animation</td>
+              </tr>
+              <tr>
+                <td>calendar:closed</td>
+                <td>Calendar Element<span>&lt;div class="calendar"&gt;</span></td>
+                <td>Event will be triggered after Calendar completes its closing animation</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>App and Calendar Instance Events</h3>
+          <p>Calendar instance emits events on both self instance and app instance. App instance events has same names prefixed with <code>calendar</code>.</p>
+          <table class="events-table">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Target</th>
+                <th>Arguments</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>dayClick</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar, dayEl, year, month, day)</span></td>
+                <td rowspan="2">Event will be triggered after click on calendar day element</td>
+              </tr>
+              <tr>
+                <td>calendarDayClick</td>
+                <td>app</td>
+              </tr>
+              <tr>
+                <td>change</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar, value)</span></td>
+                <td rowspan="2">Event will be triggered when calendar value changes</td>
+              </tr>
+              <tr>
+                <td>calendarChange</td>
+                <td>app</td>
+              </tr>
+              <tr>
+                <td>monthAdd</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar, monthEl)</span></td>
+                <td rowspan="2">Event will be triggered when new month HTML layout has been added. Useful if you need to postprocess added html elements</td>
+              </tr>
+              <tr>
+                <td>calendarMonthAdd</td>
+                <td>app</td>
+              </tr>
+              <tr>
+                <td>monthYearChangeStart</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar, year, month)</span></td>
+                <td rowspan="2">Event will be triggered in the begining of transition to next month</td>
+              </tr>
+              <tr>
+                <td>calendarMonthYearChangeStart</td>
+                <td>app</td>
+              </tr>
+              <tr>
+                <td>monthYearChangeEnd</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar, year, month)</span></td>
+                <td rowspan="2">Event will be triggered after transition to next month</td>
+              </tr>
+              <tr>
+                <td>calendarMonthYearChangeEnd</td>
+                <td>app</td>
+              </tr>
+              <tr>
+                <td>init</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar)</span></td>
+                <td rowspan="2">Event will be triggered when calendar initialized</td>
+              </tr>
+              <tr>
+                <td>calendarInit</td>
+                <td>app</td>
+              </tr>
+              <tr>
+                <td>open</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar)</span></td>
+                <td rowspan="2">Event will be triggered when Calendar starts its opening animation. As an argument event handler receives calendar instance</td>
+              </tr>
+              <tr>
+                <td>calendarOpen</td>
+                <td>app</td>
+              </tr>
+              <tr>
+                <td>opened</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar)</span></td>
+                <td rowspan="2">Event will be triggered after Calendar completes its opening animation. As an argument event handler receives calendar instance</td>
+              </tr>
+              <tr>
+                <td>calendarOpened</td>
+                <td>app</td>
+              </tr>
+              <tr>
+                <td>close</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar)</span></td>
+                <td rowspan="2">Event will be triggered when Calendar starts its closing animation. As an argument event handler receives calendar instance</td>
+              </tr>
+              <tr>
+                <td>calendarClose</td>
+                <td>app</td>
+              </tr>
+              <tr>
+                <td>closed</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar)</span></td>
+                <td rowspan="2">Event will be triggered after Calendar completes its closing animation. As an argument event handler receives calendar instance</td>
+              </tr>
+              <tr>
+                <td>calendarClosed</td>
+                <td>app</td>
+              </tr>
+              <tr>
+                <td>beforeDestroy</td>
+                <td>calendar</td>
+                <td rowspan="2"><span>(calendar)</span></td>
+                <td rowspan="2">Event will be triggered right before Calendar instance will be destroyed. As an argument event handler receives calendar instance</td>
+              </tr>
+              <tr>
+                <td>calendarBeforeDestroy</td>
+                <td>app</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="with-device">
+            <h2 data-device-preview="../docs-demos/calendar.html">Examples</h2>
+            <h4>Default Setup</h4>
+            <pre><code class="html">&lt;div class="block-title"&gt;Default setup&lt;/div&gt;
+&lt;div class="list no-hairlines-md"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div class="item-content item-input"&gt;
+        &lt;div class="item-inner"&gt;
+          &lt;div class="item-input-wrap"&gt;
+            &lt;input type="text" placeholder="Your birth date" readonly="readonly" id="demo-calendar-default"/&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <pre><code class="js">var calendarDefault = app.calendar.create({
+  inputEl: '#demo-calendar-default',
+});
+
+</code></pre>
+            <h4>Custom Date Format</h4>
+            <pre><code class="html">&lt;div class="block-title"&gt;Custom date format&lt;/div&gt;
+&lt;div class="list no-hairlines-md"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div class="item-content item-input"&gt;
+        &lt;div class="item-inner"&gt;
+          &lt;div class="item-input-wrap"&gt;
+            &lt;input type="text" placeholder="Select date" readonly="readonly" id="demo-calendar-date-format"/&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <pre><code class="js">var calendarDateFormat = app.calendar.create({
+  inputEl: '#demo-calendar-date-format',
+  dateFormat: 'DD, MM dd, yyyy'
+});
+
+</code></pre>
+            <h4>Multiple Values</h4>
+            <pre><code class="html">&lt;div class="block-title"&gt;Multiple Values&lt;/div&gt;
+&lt;div class="list no-hairlines-md"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div class="item-content item-input"&gt;
+        &lt;div class="item-inner"&gt;
+          &lt;div class="item-input-wrap"&gt;
+            &lt;input type="text" placeholder="Select multiple dates" readonly="readonly" id="demo-calendar-multiple"/&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+            <pre><code class="js">var calendarMultiple = app.calendar.create({
+  inputEl: '#demo-calendar-multiple',
+  dateFormat: 'M dd yyyy',
+  multiple: true
+});
+</code></pre>
+            <h4>Range Picker</h4>
+            <pre><code class="html">&lt;div class="block-title"&gt;Range Picker&lt;/div&gt;
+&lt;div class="list no-hairlines-md"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div class="item-content item-input"&gt;
+        &lt;div class="item-inner"&gt;
+          &lt;div class="item-input-wrap"&gt;
+            &lt;input type="text" placeholder="Select date range" readonly="readonly" id="demo-calendar-range"/&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <pre><code class="js">var calendarRange = app.calendar.create({
+  inputEl: '#demo-calendar-range',
+  dateFormat: 'M dd yyyy',
+  rangePicker: true
+});</code></pre>
+            <h4>Open In Modal</h4>
+            <pre><code class="html">&lt;div class="block-title"&gt;Open in Mondal&lt;/div&gt;
+&lt;div class="list no-hairlines-md"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div class="item-content item-input"&gt;
+        &lt;div class="item-inner"&gt;
+          &lt;div class="item-input-wrap"&gt;
+            &lt;input type="text" placeholder="Select date" readonly="readonly" id="demo-calendar-modal"/&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+            <pre><code class="js">var calendarModal = app.calendar.create({
+  inputEl: '#demo-calendar-modal',
+  openIn: 'customModal',
+  header: true,
+  footer: true,
+  dateFormat: 'MM dd yyyy',
+});
+</code></pre>
+            <h4>With Events</h4>
+            <pre><code class="html">&lt;div class="block-title"&gt;With Events&lt;/div&gt;
+&lt;div class="list no-hairlines-md"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div class="item-content item-input"&gt;
+        &lt;div class="item-inner"&gt;
+          &lt;div class="item-input-wrap"&gt;
+            &lt;input type="text" placeholder="Select date" readonly="readonly" id="demo-calendar-events"/&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+            <pre><code class="js">var today = new Date();
+var weekLater = new Date().setDate(today.getDate() + 7);
+var calendarEvents = app.calendar.create({
+    inputEl: '#demo-calendar-events',
+    dateFormat: 'M dd yyyy',
+    events: {
+      from: today,
+      to: weekLater
+    }
+});
+</code></pre>
+            <h4>Disabled Dates</h4>
+            <pre><code class="html">&lt;div class="block-title"&gt;Disabled Dates&lt;/div&gt;
+&lt;div class="list no-hairlines-md"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;div class="item-content item-input"&gt;
+        &lt;div class="item-inner"&gt;
+          &lt;div class="item-input-wrap"&gt;
+            &lt;input type="text" placeholder="Select date" readonly="readonly" id="demo-calendar-disabled"/&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+            <pre><code class="js">var today = new Date();
+var weekLater = new Date().setDate(today.getDate() + 7);
+var calendarDisabled = app.calendar.create({
+    inputEl: '#demo-calendar-disabled',
+    dateFormat: 'M dd yyyy',
+    disabled: {
+      from: today,
+      to: weekLater
+    }
+});
+
+</code></pre>
+            <h4>Inline With Custom Toolbar</h4>
+            <pre><code class="html">&lt;div class="block-title"&gt;Inline with custom toolbar&lt;/div&gt;
+&lt;div class="block block-strong no-padding"&gt;
+  &lt;div id="demo-calendar-inline-container"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            <pre><code class="js">var $$ = Dom7;
+var monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August' , 'September' , 'October', 'November', 'December'];
+var calendarInline = app.calendar.create({
+  containerEl: '#demo-calendar-inline-container',
+  value: [new Date()],
+  weekHeader: false,
+  renderToolbar: function () {
+    return '&lt;div class="toolbar calendar-custom-toolbar no-shadow"&gt;' +
+      '&lt;div class="toolbar-inner"&gt;' +
+        '&lt;div class="left"&gt;' +
+          '&lt;a href="#" class="link icon-only"&gt;&lt;i class="icon icon-back ' + (app.theme === 'md' ? 'color-black' : '') + '"&gt;&lt;/i&gt;&lt;/a&gt;' +
+        '&lt;/div&gt;' +
+        '&lt;div class="center"&gt;&lt;/div&gt;' +
+        '&lt;div class="right"&gt;' +
+          '&lt;a href="#" class="link icon-only"&gt;&lt;i class="icon icon-forward ' + (app.theme === 'md' ? 'color-black' : '') + '"&gt;&lt;/i&gt;&lt;/a&gt;' +
+        '&lt;/div&gt;' +
+      '&lt;/div&gt;' +
+    '&lt;/div&gt;';
+  },
+  on: {
+    init: function (c) {
+      $$('.calendar-custom-toolbar .center').text(monthNames[c.currentMonth] +', ' + c.currentYear);
+      $$('.calendar-custom-toolbar .left .link').on('click', function () {
+        calendarInline.prevMonth();
+      });
+      $$('.calendar-custom-toolbar .right .link').on('click', function () {
+        calendarInline.nextMonth();
+      });
+    },
+    monthYearChangeStart: function (c) {
+      $$('.calendar-custom-toolbar .center').text(monthNames[c.currentMonth] +', ' + c.currentYear);
+    }
+  }
+});</code></pre>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js"></script>
+    <script src="/js/jquery-1.11.0.min.js"></script>
+    <script src="/js/highlight.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-74282934-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      (function(){
+        var bsa = document.createElement('script');
+           bsa.type = 'text/javascript';
+           bsa.async = true;
+           bsa.src = '//s3.buysellads.com/ac/bsa.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+      })();
+    </script>
+    <script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+    <script>
+      (function(){
+        if(typeof _bsa !== 'undefined' && _bsa) {
+        _bsa.init('default', 'CKYD627I', 'placement:framework7io', {
+          target: '.bsa-cpc',
+          align: 'horizontal',
+          disable_css: 'true'
+        });
+          }
+      })();
+    </script>
+  </body>
+</html>
